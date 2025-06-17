@@ -49,3 +49,22 @@
   border-radius: 100%;
   
 }
+
+
+
+input {
+  background-color: #000; /* Fondo negro */
+  color: #00ff00; /* Texto blanco */
+  border: 2px solid #00ff00; /* Borde verde */
+  padding: 5px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados opcional */
+  place-content: #00ff00;
+}
+input::placeholder {
+  color: #00ff00; /* Color del texto del placeholder */
+}
+
+input:focus {
+  outline: none; /* Eliminar el borde azul por defecto al enfocar */
+  /* Mantener el borde verde */
+}

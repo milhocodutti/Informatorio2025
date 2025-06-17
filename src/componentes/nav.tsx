@@ -1,32 +1,64 @@
-import styles from './nav.module.css'
+import { useState } from "react";
+import styles from './nav.module.css';
+import { response } from './dataBase';
 
 
 
-type NavProps = {}
+type NavProps = {
+  onResultsChange: (results: typeof response.categoria) => void;
+};
 
+function Nav({ onResultsChange }: NavProps) {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [ , setSearchResults] = useState(response.categoria);
 
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+    if (!query) {
+      setSearchResults(response.categoria);
+      onResultsChange(response.categoria); // Notifica los resultados al componente padre
+      return;
+    }
 
-function Nav(props: NavProps){
-  const  {} = props;
+    const filteredResults = response.categoria
+      .map((categoria) => ({
+        ...categoria,
+        post: categoria.post.filter((post) =>
+          post.titulo.toLowerCase().includes(query.toLowerCase()) ||
+          post.descripcion.toLowerCase().includes(query.toLowerCase())
+          ||
+          post.genero.toLowerCase().includes(query.toLowerCase())
+        ),
+      }))
+      .filter((categoria) => categoria.post.length > 0);
+
+    setSearchResults(filteredResults);
+    onResultsChange(filteredResults); // Notifica los resultados filtrados
+  };
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    handleSearch(event.target.value);
+  };
+
   return (
     <nav className={styles.nav}>
       <ul className={styles.navlist}>
-        <img className={styles.logo}></img>
-        <li>
-          <a href="#" className={styles.navlink}>Inicio</a>
+        <img className={styles.logo} alt="Logo" />
+        <li className={styles.navlink}>
+          Novedades
         </li>
-        <li>
-          <a href="#" className={styles.navlink}>Géneros</a>
-        </li>
-        <li>
-          <a href="#" className={styles.navlink}>Buscar</a>
-        </li>
-        <li>
-          <a href="#" className={styles.navlink}>Novedades</a>
+          <li>
+          <input
+            type="text"
+            placeholder="Buscar..."
+            value={searchQuery}
+            onChange={handleInputChange}
+            className={styles.input}
+          />
         </li>
       </ul>
     </nav>
   );
-};
+}
 
 export default Nav;
