@@ -8,6 +8,7 @@ export type Post = {
   likes?: number;
   director: string;
   genero: string;
+  url?: string;
 };
 
 export type Categoria = {
@@ -36,6 +37,7 @@ export const response: Response ={
       año: 2019,
       genero: "Acción, Ciencia ficción",
       director: "Anthony y Joe Russo",
+      url: "/video/avenger.mp4",
     },
     {
       id: "1002",
@@ -46,6 +48,7 @@ export const response: Response ={
       año: 2022,
       genero: "Ciencia ficción, Aventura",
       director: "James Cameron",
+      url: "/video/avatar.mp4",
     },
     {
       id: "1003",
@@ -56,6 +59,7 @@ export const response: Response ={
       año: 2021,
       genero: "Acción, Aventura",
       director: "Jon Watts",
+      url: "/video/spiderman.mp4",
     },
     {
       id: "1004",
@@ -66,6 +70,7 @@ export const response: Response ={
       año: 2022,
       genero: "Ciencia ficción, Aventura",
       director: "Colin Trevorrow",
+      url: "./video/jurassic.mp4",
     },
     {
       id: "1005",
@@ -76,6 +81,7 @@ export const response: Response ={
       año: 2019,
       genero: "Acción, Aventura",
       director: "Jon Favreau",
+      url: "./video/leon.mp4",
     },
     {
       id: "1006",
@@ -86,6 +92,7 @@ export const response: Response ={
       año: 2022,
       genero: "Acción, Drama",
       director: "Ryan Coogler",
+      url: "./video/panter.mp4",
     },
     {
       id: "1007",
@@ -96,6 +103,7 @@ export const response: Response ={
       año: 2023,
       genero: "Acción, Aventura",
       director: "Louis Leterrier",
+      url: "./video/video07.mp4",
     },
   ]
   },
@@ -113,6 +121,7 @@ export const response: Response ={
       año: 2019,
       genero: "Drama, Comedia negra",
       director: "Bong Joon-ho",
+      url: "./video/video.mp4",
     },
     {
       id: "2002",
@@ -123,6 +132,7 @@ export const response: Response ={
       año: 2015,
       genero: "Terror, Suspenso",
       director: "Robert Eggers",
+      url: "./video/video.mp4",
     },
     {
       id: "2003",
@@ -133,6 +143,7 @@ export const response: Response ={
       año: 2019,
       genero: "Drama",
       director: "Barry Jenkins",
+      url: "./video/video.mp4",
     },
     {
       id: "2004",
@@ -143,6 +154,7 @@ export const response: Response ={
       año: 2019,
       genero: "Terror, Drama",
       director: "Robert Eggers",
+      url: "./video/video.mp4",
     },
     {
       id: "2005",
@@ -153,6 +165,7 @@ export const response: Response ={
       año: 2019,
       genero: "Drama, Comedia",
       director: "Anthony y Joe Russo",
+      url: "./video/video.mp4",
     },
     {
       id: "2006",
@@ -163,6 +176,7 @@ export const response: Response ={
       año: 2009,
       genero: "Drama, Misterio",
       director: "Juan José Campanella",
+      url: "./video/video.mp4",
     },
     {
       id: "2007",
@@ -173,6 +187,7 @@ export const response: Response ={
       año: 2011,
       genero: "Acción, Crimen",
       director: "Nicolas Winding Refn",
+      url: "./video/video.mp4",
     },
     ],
   },
@@ -190,6 +205,7 @@ export const response: Response ={
       año: 1972,
       genero: "Crimen, Drama",
       director: "Francis Ford Coppola",
+      url: "./video/padrino.mp4",
     },
     {
       id: "3002",
@@ -200,6 +216,7 @@ export const response: Response ={
       año: 1942,
       genero: "Romance, Drama",
       director: "Michael Curtiz",
+      url: "./video/video.mp4",
     },
     {
       id: "3003",
@@ -210,6 +227,7 @@ export const response: Response ={
       año: 1939,
       genero: "Romance, Drama",
       director: "Victor Fleming",
+      url: "./video/video.mp4",
     },
     {
       id: "3004",
@@ -220,6 +238,7 @@ export const response: Response ={
       año: 1960,
       genero: "Suspenso, Terror",
       director: "Alfred Hitchcock",
+      url: "./video/video.mp4",
     },
     {
       id: "3005",
@@ -230,6 +249,7 @@ export const response: Response ={
       año: 1968,
       genero: "Ciencia ficción",
       director: "Stanley Kubrick",
+      url: "./video/video.mp4",
     },
     {
       id: "3006",
@@ -240,6 +260,7 @@ export const response: Response ={
       año: 1941,
       genero: "Drama, Misterio",
       director: "Orson Welles",
+      url: "./video/video.mp4",
     },
     {
       id: "3007",
@@ -250,6 +271,8 @@ export const response: Response ={
       año: 1952,
       genero: "Musical, Comedia",
       director: "Stanley Donen y Gene Kelly",
+      url: "./video/video.mp4",
+
     },
     ],
   },
@@ -267,6 +290,7 @@ export const response: Response ={
       año: 2013,
       genero: "Animación, Musical",
       director: "Chris Buck y Jennifer Lee",
+      url: "./video/video.mp4",
     },
     {
       id: "4002",
@@ -277,6 +301,7 @@ export const response: Response ={
       año: 1995,
       genero: "Animación, Comedia",
       director: "John Lasseter",
+      url: "./video/video.mp4",
     },
     {
       id: "4003",
@@ -287,6 +312,7 @@ export const response: Response ={
       año: 2001,
       genero: "Animación, Comedia",
       director: "Andrew Adamson y Vicky Jenson",
+      url: "./video/video.mp4",
     },
     {
       id: "4004",
@@ -297,6 +323,7 @@ export const response: Response ={
       año: 2019,
       genero: "Animación, Aventura",
       director: "Roger Allers y Rob Minkoff",
+      url: "./video/video.mp4",
     },
     {
       id: "4005",
@@ -307,6 +334,7 @@ export const response: Response ={
       año: 2003,
       genero: "Animación, Aventura",
       director: "Andrew Stanton",
+      url: "./video/video.mp4",
     },
     {
       id: "4006",
@@ -317,6 +345,7 @@ export const response: Response ={
       año: 2001,
       genero: "Animación, Musical",
       director: "Jared Bush y Byron Howard",
+      url: "./video/video.mp4",
     },
     {
       id: "4007",
@@ -327,6 +356,7 @@ export const response: Response ={
       año: 2007,
       genero: "Animación, Comedia",
       director: "Brad Bird",
+      url: "./video/video.mp4",
     },
     ],
     }

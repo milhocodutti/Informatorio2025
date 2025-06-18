@@ -1,4 +1,3 @@
-import Card from "./card";
 import { type ReactNode } from "react";
 import styles from "./containerCard.module.css";
 
