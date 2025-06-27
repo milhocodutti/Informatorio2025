@@ -1,19 +1,45 @@
 .card{
     /*border: 1px solid #00ff00;*/
     padding: 5px;
-    width: 230px;
+    width: 200px;
+    height: 300px;
     color: #ffffff;
-    
+    background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+ display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Alinea los elementos en la parte inferior */
+  overflow: hidden;
+  align-items: center;
+  
 }
+
+
 .titulo{
   font-weight:bolder;
-  font-size: 1.3rem;
+  font-size: 1 rem;
+  /* -webkit-text-stroke: 1px black;  Borde sólido negro */
+   color: #00ff00;
+   background-color: #010101;
+    width: 100%;
+    border-radius:15px;
+    border:1px solid #00ff00;
+   
+  
 }
 .ver{
     border-radius: 10px;
     background-color: #010101;
     border: 1px solid #00ff00;
-    width: 50%;
+    width: 55%;
+    color: #00ff00;
+    font: .9em sans-serif;
+    font-weight: bold;
+  
+    
 }
 .ver:hover{
   box-shadow: 0 0 15px rgba(0, 255, 0, 1.7);
@@ -21,12 +47,20 @@
 }
 .imagen{
   width: 200px;        /* Ancho fijo */
-  height: 300px;       /* Alto fijo */
+  height: 250px;       /* Alto fijo */
   object-fit: cover;   /* Ajuste del contenido */
   /*border: 1px solid #00ff00;*/
   border-radius: 5%;
+  
 }
-.imagen:hover{
+.card:hover{
   box-shadow: 0 0 15px rgba(0, 255, 0, 1.7);
   animation: pulsar 1.5s infinite alternate;
 }
+
+.hide{
+  display: none;
+}
+
+
+

@@ -4,7 +4,7 @@
   top: 0;
   width: 100%;
   z-index: 10;
-}
+ }
 
 .navlist {
   display: flex;
@@ -15,7 +15,7 @@
   
 }
 
-.navlink {
+.navlink, a {
   color: #00ff00;
   font-weight: 500;
   text-decoration: none;
@@ -24,15 +24,36 @@
   
 }
 
-.navlink:hover {
+.navlink:hover,  a:hover {
   color: #00ff00;
   text-shadow: 
     0 0 5px #00ff00,
     0 0 10px #00ff00,
-    0 0 20px #00ffff,
-    0 0 40px #00ffff;
+    0 0 20px #00ff00,
+    0 0 40px #00ff00;
 }
 
+.select:hover{
+  color: #00ff00;
+  text-shadow: 
+    0 0 5px #00ff00,
+    0 0 10px #00ff00,
+    0 0 20px #00ff00,
+    0 0 40px #00ff00;
+}
+option{
+  color: #00ff00;
+  background-color:#000000 ;
+}
+option:hover{
+  color: #00ff00;
+  background-color: #000000;
+  text-shadow: 
+    0 0 5px #00ff00,
+    0 0 10px #00ff00,
+    0 0 20px #00ff00,
+    0 0 40px #00ff00;
+}
 
 .logoContainer {
   display: flex;
@@ -42,10 +63,28 @@
 .logo {
   width: 1.5rem;
   height: 1.8rem;
-  background-image: url("https://milhocodutti.github.io/Portfolio/statics/img/logomilho.png");
   background-size: cover;        
   background-position: center;    
   background-repeat: no-repeat;  
   border-radius: 100%;
   
+}
+
+
+
+input {
+  background-color: #000; /* Fondo negro */
+  color: #00ff00; /* Texto blanco */
+  border: 2px solid #00ff00; /* Borde verde */
+  padding: 5px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados opcional */
+  place-content: #00ff00;
+}
+input::placeholder {
+  color: #00ff00; /* Color del texto del placeholder */
+}
+
+input:focus {
+  outline: none; /* Eliminar el borde azul por defecto al enfocar */
+  /* Mantener el borde verde */
 }
