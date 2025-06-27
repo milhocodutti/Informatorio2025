@@ -138,7 +138,7 @@ export const response: Response ={
       id: "2003",
       titulo: "Moonligth",
       descripcion: "Una historia de crecimiento y autodescubrimiento en Miami.",
-      src:'https://ascot-elite.ch/modules/AscotElite/movies/2058/de/archive/cover_detail.jpg',
+      src:'https://bilbaoenvivo.wordpress.com/wp-content/uploads/2017/02/bev-moonlight-0-cartel.jpg?w=640',
       
       año: 2019,
       genero: "Drama",
@@ -222,7 +222,7 @@ export const response: Response ={
       id: "3003",
       titulo: "Lo que el Viento se Llevó",
       descripcion: "Una historia de amor y guerra en el sur de Estados Unidos.",
-      src:'https://pics.filmaffinity.com/gone_with_the_wind-432251527-mmed.jpg',
+      src:'https://www.santandercreativa.com/uploads/event/main_image/5703/gone_with_the_wind-432251527-large.jpeg',
       likes: 458856,
       año: 1939,
       genero: "Romance, Drama",

@@ -1,0 +1,124 @@
+.reproductor{
+    padding-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    text-Align: center;
+    display: flex;
+    
+    margin-top: 0;
+    
+    
+}
+.botonera{
+    width: 15%;
+    display: block;
+    
+}
+video{
+    width: 70%;  
+    margin-left: 10px;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+select, option{
+  padding: 2px;
+  font-weight: bold;
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #00ff00;
+  border-color: #00ff00;
+  text-shadow: 
+    0 0 5px #00ff00,
+    0 0 10px #00ff00,
+    0 0 20px #00ff00,
+    0 0 40px #00ff00;
+
+}
+
+
+button{
+    color: #00ff00;
+    background-color: black;
+    border: 1px solid #00ff00;
+    width:  auto;
+    display: block;
+    width: 100%;
+    height: 10%;
+    font-size: medium;
+  }
+
+button:hover {
+  background-color: black;
+  color: #00ff00;
+  border-color: #00ff00;
+  text-shadow: 
+    0 0 5px #00ff00,
+    0 0 10px #00ff00,
+    0 0 20px #00ff00,
+    0 0 40px #00ff00;
+}
+
+
+/* Quitar el borde azul al hacer foco (ej. al hacer clic) */
+button:focus {
+  outline: none;
+  border-color: #00ff00;
+  text-shadow: 
+    0 0 5px #00ff00,
+    0 0 10px #00ff00,
+    0 0 20px #00ff00,
+    0 0 40px #00ff00;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 93%;
+  height: 6px;
+  background: #000000;
+  outline: none;
+}
+
+.slider::-webkit-slider-runnable-track {
+  background: #000000;
+  height: 6px;
+  border-radius: 5px;
+  text-shadow: 
+    0 0 5px #00ff00,
+    0 0 10px #00ff00,
+    0 0 20px #00ff00,
+    0 0 40px #00ff00;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #00ff00;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.slider::-ms-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
